@@ -21,6 +21,7 @@ Sistem microservices untuk aplikasi dompet digital yang dibangun dengan arsitekt
 ## 🏗️ Arsitektur Sistem
 
 Sistem ini menggunakan arsitektur microservices dengan komponen utama:
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fde9daea-00bd-4855-9031-b9108baa37de" />
 
 ```
 ┌──────────────────┐
@@ -1220,6 +1221,7 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
 
 
 
