@@ -866,6 +866,317 @@ Response (200 OK):
 }
 ```
 
+### ❌ Incorrect input (Port 5001)
+
+### 1️⃣ User Service (Port 5001)
+
+**Base URL**: `http://localhost:5001`
+
+#### Authentication Routes
+
+**POST /auth/register** - Register User
+
+```http
+POST http://localhost:5001/auth/register
+Content-Type: application/json
+
+{
+  "full_name": "Uyab Bayu",
+  "email": "uyab@mail.com",
+  "password": "12345"
+}
+
+Response (400 Bad Request):
+{
+    "error": "Email already exists"
+}
+```
+
+**POST /auth/login** - Login User
+
+```http
+POST http://localhost:5001/auth/login
+Content-Type: application/json
+
+{
+  "email": "aaaaa@mail.com",
+  "password": "12345"
+}
+
+Response (401 Unauthorized):
+{
+    "error": "Invalid credentials"
+}
+```
+
+#### User CRUD Routes
+
+**GET /users/{id}** - Get User by ID
+
+```http
+GET http://localhost:5001/users/7
+Authorization: Bearer {token} (optional)
+
+Response (404 Not Found):
+{
+    "error": "User not found"
+}
+```
+
+**PUT /users/{id}** - Update User
+
+```http
+PUT http://localhost:5001/users/7
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{
+  "full_name": "Uyab Bayu",
+  "email": "uyab@mail.com"
+}
+
+Response (403 Forbidden):
+{
+    "error": "Permission denied"
+}
+```
+
+**DELETE /users/{id}** - Delete User
+
+```http
+DELETE http://localhost:5001/users/7
+Authorization: Bearer {token}
+
+Response (403 Forbidden):
+{
+    "error": "Permission denied"
+}
+```
+
+#### Balance Routes
+
+**GET /users/{id}/balance** - Get Balance
+
+```http
+GET http://localhost:5001/users/7/balance
+
+Response (404 Not Found):
+{
+    "error": "User not found"
+}
+```
+
+**POST /users/{id}/topup** - Top Up Balance
+
+```http
+POST http://localhost:5001/users/7/topup
+Authorization: Bearer {token}
+Content-Type: application/json
+
+{
+    "amount": 100000
+}
+
+Response (403 Forbidden):
+{
+    "error": "Permission denied"
+}
+```
+
+#### Internal Routes (Service-to-Service)
+
+**GET /internal/users/{id}** - Get User (Internal)
+
+```http
+GET http://localhost:5001/internal/users/7
+X-Service-Token: service_shared_secret_change_this
+
+Response (404 Not Found):
+{
+    "error": "User not found"
+}
+```
+
+**PUT /internal/users/{id}/balance** - Update Balance (Internal)
+
+```http
+PUT http://localhost:5001/internal/users/7/balance
+X-Service-Token: service_shared_secret_change_this
+Content-Type: application/json
+
+{
+    "action": "debit",
+    "amount": 5000
+}
+
+Response (404 Not Found):
+{
+    "error": "User not found"
+}
+```
+
+---
+
+### 2️⃣ Transaction Service (Port 5002)
+
+**Base URL**: `http://localhost:5002`
+
+#### Transaction Management Routes
+
+**POST /transactions** - Create Transaction
+
+```http
+POST http://localhost:5002/transactions
+X-Service-Token: service_shared_secret_change_this
+Content-Type: application/json
+
+{
+  "user_id": 1,
+  "type": "cash",
+  "amount": 1000
+}
+
+Response (400 Bad Request):
+{
+    "errors": {
+        "type": [
+            "Must be one of: debit, credit."
+        ]
+    }
+}
+```
+
+**GET /transactions/{id}** - Get Transaction by ID
+
+```http
+GET http://localhost:5002/transactions/10
+
+Response (404 Not Found):
+{
+    "error": "Transaction not found"
+}
+```
+
+**PUT /transactions/{id}** - Update Transaction Status
+
+```http
+PUT http://localhost:5002/transactions/10
+Content-Type: application/json
+
+{
+    "status": "completed"
+}
+
+Response (404 Not Found):
+{
+    "error": "Transaction not found"
+}
+```
+
+**DELETE /transactions/{id}** - Delete Transaction
+
+```http
+DELETE http://localhost:5002/transactions/10
+
+Response (404 Not Found):
+{
+    "error": "Transaction not found"
+}
+```
+
+---
+
+### 3️⃣ Notification Service (Port 5003)
+
+**Base URL**: `http://localhost:5003`
+
+#### Notification Management Routes
+
+**GET /notifications/{id}** - Get Notification by ID
+
+```http
+GET http://localhost:5003/notifications/15
+
+Response (404 Not Found):
+{
+    "error": "Notification not found"
+}
+```
+
+**PUT /notifications/{id}** - Update Notification
+
+```http
+PUT http://localhost:5003/notifications/15
+Content-Type: application/json
+
+{
+  "message": "Top-up Rp 100.000 berhasil",
+  "status": "pending"
+}
+
+Response (404 Not Found):
+{
+    "error": "Notification not found"
+}
+```
+
+**DELETE /notifications/{id}** - Delete Notification
+
+```http
+DELETE http://localhost:5003/notifications/15
+
+Response (404 Not Found):
+{
+    "error": "Notification not found"
+}
+```
+
+**POST /notifications/{id}/send** - Send Notification via Email
+
+```http
+POST http://localhost:5003/notifications/15/send
+
+Response (404 Not Found):
+{
+    "error": "Notification not found"
+}
+```
+
+### 4️⃣ Report Service (Port 5004)
+
+**Base URL**: `http://localhost:5004`
+
+#### Report Management Routes
+
+**POST /reports** - Create Report
+
+```http
+POST http://localhost:5004/reports
+X-Service-Token: service_shared_secret_change_this
+Content-Type: application/json
+
+{
+  "user_id": 15,
+  "transaction_id": 15
+}
+
+Response (404 Not Found):
+{
+    "error": "Transaction not found: Status 404"
+}
+```
+
+**GET /summaries/user/{user_id}** - Get Summary by User
+
+```http
+GET http://localhost:5004/summaries/user/10
+
+Response (404 Not Found):
+{
+    "error": "Summary not found"
+}
+```
+
 ---
 
 ## 🧪 Testing dengan Postman
@@ -1232,6 +1543,7 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
 
 
 
