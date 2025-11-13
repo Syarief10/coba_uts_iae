@@ -876,6 +876,8 @@ Response (200 OK):
 
 **POST /auth/register** - Register User
 
+<img width="1360" height="526" alt="image" src="https://github.com/user-attachments/assets/ab4c8835-0170-4fad-b1dc-0a31c8cc4751" />
+
 ```http
 POST http://localhost:5001/auth/register
 Content-Type: application/json
@@ -1543,6 +1545,7 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
 
 
 
