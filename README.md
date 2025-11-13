@@ -896,6 +896,8 @@ Response (400 Bad Request):
 
 **POST /auth/login** - Login User
 
+<img width="1362" height="526" alt="image" src="https://github.com/user-attachments/assets/ff71c82d-7245-48fe-b136-fc82f2ba4038" />
+
 ```http
 POST http://localhost:5001/auth/login
 Content-Type: application/json
@@ -915,6 +917,8 @@ Response (401 Unauthorized):
 
 **GET /users/{id}** - Get User by ID
 
+<img width="1357" height="528" alt="image" src="https://github.com/user-attachments/assets/d1bc3823-0ffd-4091-9664-031892d4e83c" />
+
 ```http
 GET http://localhost:5001/users/7
 Authorization: Bearer {token} (optional)
@@ -926,6 +930,8 @@ Response (404 Not Found):
 ```
 
 **PUT /users/{id}** - Update User
+
+<img width="1354" height="533" alt="image" src="https://github.com/user-attachments/assets/e7f15755-840b-4fb7-af49-a262d33e70a1" />
 
 ```http
 PUT http://localhost:5001/users/7
@@ -945,6 +951,8 @@ Response (403 Forbidden):
 
 **DELETE /users/{id}** - Delete User
 
+<img width="1358" height="531" alt="image" src="https://github.com/user-attachments/assets/eceb04e9-0264-4dc4-8d7e-fbac3258b174" />
+
 ```http
 DELETE http://localhost:5001/users/7
 Authorization: Bearer {token}
@@ -959,6 +967,8 @@ Response (403 Forbidden):
 
 **GET /users/{id}/balance** - Get Balance
 
+<img width="1366" height="538" alt="image" src="https://github.com/user-attachments/assets/c7c2cd15-d88f-4710-9f9c-7a10121ffed1" />
+
 ```http
 GET http://localhost:5001/users/7/balance
 
@@ -969,6 +979,8 @@ Response (404 Not Found):
 ```
 
 **POST /users/{id}/topup** - Top Up Balance
+
+<img width="1361" height="525" alt="image" src="https://github.com/user-attachments/assets/2d587149-3432-41d6-b4a5-9bd66c151940" />
 
 ```http
 POST http://localhost:5001/users/7/topup
@@ -989,6 +1001,8 @@ Response (403 Forbidden):
 
 **GET /internal/users/{id}** - Get User (Internal)
 
+<img width="1361" height="536" alt="image" src="https://github.com/user-attachments/assets/1aa9006e-0038-45ac-8648-c31acf93a8f1" />
+
 ```http
 GET http://localhost:5001/internal/users/7
 X-Service-Token: service_shared_secret_change_this
@@ -1000,6 +1014,8 @@ Response (404 Not Found):
 ```
 
 **PUT /internal/users/{id}/balance** - Update Balance (Internal)
+
+<img width="1366" height="535" alt="image" src="https://github.com/user-attachments/assets/673adf38-0a98-4cdb-8670-17164a9bba62" />
 
 ```http
 PUT http://localhost:5001/internal/users/7/balance
@@ -1027,6 +1043,8 @@ Response (404 Not Found):
 
 **POST /transactions** - Create Transaction
 
+<img width="1359" height="617" alt="image" src="https://github.com/user-attachments/assets/af22f218-5357-4dbf-8063-ab07d7897a33" />
+
 ```http
 POST http://localhost:5002/transactions
 X-Service-Token: service_shared_secret_change_this
@@ -1050,6 +1068,8 @@ Response (400 Bad Request):
 
 **GET /transactions/{id}** - Get Transaction by ID
 
+<img width="1357" height="535" alt="image" src="https://github.com/user-attachments/assets/febf5a83-47c4-4f4c-b1fb-c4e993bff614" />
+
 ```http
 GET http://localhost:5002/transactions/10
 
@@ -1060,6 +1080,8 @@ Response (404 Not Found):
 ```
 
 **PUT /transactions/{id}** - Update Transaction Status
+
+<img width="1358" height="524" alt="image" src="https://github.com/user-attachments/assets/a55af2d2-f771-4d13-8228-ceac0dda2a96" />
 
 ```http
 PUT http://localhost:5002/transactions/10
@@ -1076,6 +1098,8 @@ Response (404 Not Found):
 ```
 
 **DELETE /transactions/{id}** - Delete Transaction
+
+<img width="1356" height="536" alt="image" src="https://github.com/user-attachments/assets/217c5177-8b6d-4683-9c7f-f11e94c1a363" />
 
 ```http
 DELETE http://localhost:5002/transactions/10
@@ -1096,6 +1120,8 @@ Response (404 Not Found):
 
 **GET /notifications/{id}** - Get Notification by ID
 
+<img width="1352" height="534" alt="image" src="https://github.com/user-attachments/assets/c6994659-00a9-4970-84f4-d3265e125a3f" />
+
 ```http
 GET http://localhost:5003/notifications/15
 
@@ -1106,6 +1132,8 @@ Response (404 Not Found):
 ```
 
 **PUT /notifications/{id}** - Update Notification
+
+<img width="1361" height="532" alt="image" src="https://github.com/user-attachments/assets/e9ea9bd8-6bb1-4ecd-94c0-38d07b9c0d05" />
 
 ```http
 PUT http://localhost:5003/notifications/15
@@ -1124,6 +1152,8 @@ Response (404 Not Found):
 
 **DELETE /notifications/{id}** - Delete Notification
 
+<img width="1357" height="528" alt="image" src="https://github.com/user-attachments/assets/fd17c761-6fe5-46c1-beb9-7c8212b9f5bc" />
+
 ```http
 DELETE http://localhost:5003/notifications/15
 
@@ -1134,6 +1164,8 @@ Response (404 Not Found):
 ```
 
 **POST /notifications/{id}/send** - Send Notification via Email
+
+<img width="1362" height="523" alt="image" src="https://github.com/user-attachments/assets/af2a2dbe-780b-4c1f-8d89-333efea4d52e" />
 
 ```http
 POST http://localhost:5003/notifications/15/send
@@ -1152,6 +1184,8 @@ Response (404 Not Found):
 
 **POST /reports** - Create Report
 
+<img width="1359" height="533" alt="image" src="https://github.com/user-attachments/assets/b89a3550-7a05-4054-acc8-685b31fbc389" />
+
 ```http
 POST http://localhost:5004/reports
 X-Service-Token: service_shared_secret_change_this
@@ -1169,6 +1203,8 @@ Response (404 Not Found):
 ```
 
 **GET /summaries/user/{user_id}** - Get Summary by User
+
+<img width="1357" height="524" alt="image" src="https://github.com/user-attachments/assets/ac40c20d-59a9-4182-9cd0-d50994bace1e" />
 
 ```http
 GET http://localhost:5004/summaries/user/10
@@ -1545,6 +1581,7 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
 
 
 
