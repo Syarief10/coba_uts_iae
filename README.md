@@ -316,13 +316,6 @@ Content-Type: application/json
     "password": "password123"
 }
 
-![Image](https://github.com/user-attachments/assets/3e7623b2-2fcb-44e2-874f-0ee3b3aa006e)
-
-https://github.com/user-attachments/assets/3e7623b2-2fcb-44e2-874f-0ee3b3aa006e
-
-![Test Image](https://github.com/user-attachments/assets/3e7623b2-2fcb-44e2-874f-0ee3b3aa006e)
-
-
 Response (201 Created):
 {
     "id": 1,
@@ -331,6 +324,8 @@ Response (201 Created):
     "balance": 0.0
 }
 ```
+<img width="1352" height="615" alt="image" src="https://github.com/user-attachments/assets/bc35bf3c-95ee-46d5-ad1f-cf26ccafbafd" />
+
 
 **POST /auth/login** - Login User
 
