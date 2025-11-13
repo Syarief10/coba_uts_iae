@@ -313,6 +313,9 @@ Content-Type: application/json
     "password": "password123"
 }
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f31e473b-170a-4c39-b13b-75dc527983cc" />
+
+
 Response (201 Created):
 {
     "id": 1,
@@ -1211,3 +1214,4 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
