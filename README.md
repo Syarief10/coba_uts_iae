@@ -313,8 +313,7 @@ Content-Type: application/json
     "password": "password123"
 }
 
-<img width="1372" height="667" alt="Screenshot 2025-11-12 164402" src="https://github.com/user-attachments/assets/a5538e83-7689-417c-ac37-3cdb6a47236d" />
-
+![Image](https://github.com/user-attachments/assets/53012b32-0c29-429f-9c71-34f59b9fcd69)
 
 Response (201 Created):
 {
@@ -1214,5 +1213,6 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
 
 
