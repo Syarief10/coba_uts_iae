@@ -357,6 +357,8 @@ Response (200 OK):
 
 **GET /users** - Get All Users
 
+<img width="1362" height="667" alt="image" src="https://github.com/user-attachments/assets/fa64f1ea-927d-4517-88ff-a2fb36ef96d0" />
+
 ```http
 GET http://localhost:5001/users
 
@@ -377,27 +379,9 @@ Response (200 OK):
 ]
 ```
 
-**POST /users** - Create User
-
-```http
-POST http://localhost:5001/users
-Content-Type: application/json
-
-{
-    "full_name": "Jane Doe",
-    "email": "jane@example.com",
-    "password": "mypassword"
-}
-
-Response (201 Created):
-{
-    "id": 2,
-    "full_name": "Jane Doe",
-    "email": "jane@example.com"
-}
-```
-
 **GET /users/{id}** - Get User by ID
+
+<img width="1355" height="622" alt="image" src="https://github.com/user-attachments/assets/c80400cd-dbb6-4224-9230-96885760356f" />
 
 ```http
 GET http://localhost:5001/users/1
@@ -413,6 +397,8 @@ Response (200 OK):
 ```
 
 **PUT /users/{id}** - Update User
+
+<img width="1368" height="617" alt="image" src="https://github.com/user-attachments/assets/ff96a355-f870-4b39-a263-617e02ff9f53" />
 
 ```http
 PUT http://localhost:5001/users/1
@@ -432,6 +418,8 @@ Response (200 OK):
 ```
 
 **DELETE /users/{id}** - Delete User
+
+<img width="1361" height="529" alt="image" src="https://github.com/user-attachments/assets/c3d22818-9797-49e4-8f2a-d7ccc9b2caf2" />
 
 ```http
 DELETE http://localhost:5001/users/1
@@ -1220,6 +1208,7 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
 
 
 
