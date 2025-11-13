@@ -615,6 +615,8 @@ Response (200 OK):
 
 **DELETE /transactions/{id}** - Delete Transaction
 
+<img width="1360" height="536" alt="image" src="https://github.com/user-attachments/assets/55b08ef0-e45c-49fc-9a01-f7555bb084c4" />
+
 ```http
 DELETE http://localhost:5002/transactions/1
 
@@ -753,6 +755,8 @@ Response (200 OK):
 ```
 
 **DELETE /notifications/{id}** - Delete Notification
+
+<img width="1357" height="527" alt="Screenshot 2025-11-13 163036" src="https://github.com/user-attachments/assets/ac994413-9af1-4db1-b685-7782f620557d" />
 
 ```http
 DELETE http://localhost:5003/notifications/1
@@ -1216,6 +1220,7 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
 
 
 
