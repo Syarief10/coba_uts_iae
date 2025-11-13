@@ -305,7 +305,8 @@ Semua endpoints diakses melalui base URL yang sesuai dengan service masing-masin
 #### Authentication Routes
 
 **POST /auth/register** - Register User
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1f890cbf-83fb-44e6-905a-57c48f149e83" />
+<img width="1352" height="615" alt="image" src="https://github.com/user-attachments/assets/b3ba61e6-9081-4cb5-87c0-a26ca2f99aec" />
+
 
 ```http
 POST http://localhost:5001/auth/register
@@ -1216,6 +1217,7 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
 
 
 
