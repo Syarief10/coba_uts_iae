@@ -473,6 +473,8 @@ Response (200 OK):
 
 **GET /internal/users/{id}** - Get User (Internal)
 
+<img width="1357" height="617" alt="image" src="https://github.com/user-attachments/assets/3b7b2333-7108-4c72-851c-5e7fcfb1ba1c" />
+
 ```http
 GET http://localhost:5001/internal/users/1
 X-Service-Token: service_shared_secret_change_this
@@ -486,6 +488,8 @@ Response (200 OK):
 ```
 
 **PUT /internal/users/{id}/balance** - Update Balance (Internal)
+
+<img width="1362" height="617" alt="image" src="https://github.com/user-attachments/assets/b9d20012-d4d6-4685-8d6c-f1a02e86772d" />
 
 ```http
 PUT http://localhost:5001/internal/users/1/balance
@@ -514,7 +518,7 @@ Response (200 OK):
 
 **POST /transactions** - Create Transaction
 
-<img width="1357" height="641" alt="image" src="https://github.com/user-attachments/assets/e09a27b1-ff9a-410e-bb5f-30e232faddba" />
+<img width="1358" height="644" alt="image" src="https://github.com/user-attachments/assets/e1c4c245-884d-4ce5-9450-0cef7fe3d69c" />
 
 ```http
 POST http://localhost:5002/transactions
@@ -789,6 +793,8 @@ Response (200 OK):
 
 **POST /reports** - Create Report
 
+<img width="1365" height="755" alt="image" src="https://github.com/user-attachments/assets/e1695f10-95a9-4cde-ad19-81cdb731d2c9" />
+
 ```http
 POST http://localhost:5004/reports
 X-Service-Token: service_shared_secret_change_this
@@ -810,6 +816,8 @@ Response (201 Created):
 ```
 
 **GET /reports/user/{user_id}** - Get Reports by User (with Pagination)
+
+<img width="1356" height="794" alt="image" src="https://github.com/user-attachments/assets/574a909a-d84a-4206-9050-6e0a4fb23fd5" />
 
 ```http
 GET http://localhost:5004/reports/user/1?page=1&per_page=50
@@ -840,6 +848,8 @@ Response (200 OK):
 ```
 
 **GET /summaries/user/{user_id}** - Get Summary by User
+
+<img width="1360" height="727" alt="image" src="https://github.com/user-attachments/assets/783a8cbf-e639-4d70-a8e0-35df7d2701c0" />
 
 ```http
 GET http://localhost:5004/summaries/user/1
@@ -1220,6 +1230,7 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
 
 
 
