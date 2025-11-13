@@ -313,7 +313,7 @@ Content-Type: application/json
     "password": "password123"
 }
 
-https://github.com/user-attachments/assets/53012b32-0c29-429f-9c71-34f59b9fcd69
+![Image](https://github.com/user-attachments/assets/3e7623b2-2fcb-44e2-874f-0ee3b3aa006e)
 
 Response (201 Created):
 {
@@ -1213,6 +1213,7 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
 
 
 
