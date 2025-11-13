@@ -435,6 +435,8 @@ Response (200 OK):
 
 **GET /users/{id}/balance** - Get Balance
 
+<img width="1356" height="555" alt="image" src="https://github.com/user-attachments/assets/d9619dc0-52ef-40e5-af83-594ceb143341" />
+
 ```http
 GET http://localhost:5001/users/1/balance
 
@@ -446,6 +448,10 @@ Response (200 OK):
 ```
 
 **POST /users/{id}/topup** - Top Up Balance
+
+<img width="1369" height="619" alt="image" src="https://github.com/user-attachments/assets/2bce3610-a1b2-4645-b2d6-4a873dd73c16" />
+
+<img width="1365" height="555" alt="image" src="https://github.com/user-attachments/assets/acd483c4-777d-400e-8650-fad5eabf587e" />
 
 ```http
 POST http://localhost:5001/users/1/topup
@@ -460,24 +466,6 @@ Response (200 OK):
 {
     "id": 1,
     "balance": 150000.0
-}
-```
-
-**POST /users/{id}/debit** - Debit Balance
-
-```http
-POST http://localhost:5001/users/1/debit
-Authorization: Bearer {token}
-Content-Type: application/json
-
-{
-    "amount": 50000
-}
-
-Response (200 OK):
-{
-    "id": 1,
-    "balance": 100000.0
 }
 ```
 
@@ -526,6 +514,8 @@ Response (200 OK):
 
 **POST /transactions** - Create Transaction
 
+<img width="1357" height="641" alt="image" src="https://github.com/user-attachments/assets/e09a27b1-ff9a-410e-bb5f-30e232faddba" />
+
 ```http
 POST http://localhost:5002/transactions
 X-Service-Token: service_shared_secret_change_this
@@ -551,6 +541,8 @@ Response (201 Created):
 ```
 
 **GET /transactions** - Get All Transactions
+
+<img width="1370" height="684" alt="image" src="https://github.com/user-attachments/assets/12642fe7-1f40-47c0-8dcc-2be3675fde8b" />
 
 ```http
 GET http://localhost:5002/transactions
@@ -580,6 +572,8 @@ Response (200 OK):
 
 **GET /transactions/{id}** - Get Transaction by ID
 
+<img width="1359" height="651" alt="image" src="https://github.com/user-attachments/assets/503a45a3-ba12-476b-86a7-db7387c40023" />
+
 ```http
 GET http://localhost:5002/transactions/1
 
@@ -596,6 +590,8 @@ Response (200 OK):
 ```
 
 **PUT /transactions/{id}** - Update Transaction Status
+
+<img width="1354" height="642" alt="image" src="https://github.com/user-attachments/assets/bbb82de5-cd0f-4621-9729-8ad392bc61cd" />
 
 ```http
 PUT http://localhost:5002/transactions/1
@@ -629,6 +625,8 @@ Response (200 OK):
 ```
 
 **GET /transactions/user/{user_id}** - Get Transactions by User
+
+<img width="1358" height="695" alt="image" src="https://github.com/user-attachments/assets/3f7bdeba-98f4-452b-a5d1-891dabd27a95" />
 
 ```http
 GET http://localhost:5002/transactions/user/1
@@ -666,6 +664,8 @@ Response (200 OK):
 
 **POST /notifications** - Create Notification
 
+<img width="1361" height="617" alt="image" src="https://github.com/user-attachments/assets/f06e4d2d-cc40-4d5c-acb8-2f354bb9a046" />
+
 ```http
 POST http://localhost:5003/notifications
 X-Service-Token: service_shared_secret_change_this
@@ -687,6 +687,8 @@ Response (201 Created):
 ```
 
 **GET /notifications** - Get All Notifications
+
+<img width="1343" height="818" alt="image" src="https://github.com/user-attachments/assets/b2652a38-10aa-4d61-bf54-4542674a4836" />
 
 ```http
 GET http://localhost:5003/notifications
@@ -712,6 +714,8 @@ Response (200 OK):
 
 **GET /notifications/{id}** - Get Notification by ID
 
+<img width="1353" height="612" alt="image" src="https://github.com/user-attachments/assets/0eeb9bca-4c6a-48d5-b76b-3b7fed167e4c" />
+
 ```http
 GET http://localhost:5003/notifications/1
 
@@ -726,6 +730,8 @@ Response (200 OK):
 ```
 
 **PUT /notifications/{id}** - Update Notification
+
+<img width="1356" height="621" alt="image" src="https://github.com/user-attachments/assets/f95d9a66-8cd0-4ee6-95b6-18892a0327b4" />
 
 ```http
 PUT http://localhost:5003/notifications/1
@@ -758,6 +764,8 @@ Response (200 OK):
 ```
 
 **POST /notifications/{id}/send** - Send Notification via Email
+
+<img width="1654" height="1079" alt="image" src="https://github.com/user-attachments/assets/f6c7f8b8-5163-49f3-85ae-6ac30509f0f8" />
 
 ```http
 POST http://localhost:5003/notifications/1/send
@@ -1208,6 +1216,7 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
 
 
 
