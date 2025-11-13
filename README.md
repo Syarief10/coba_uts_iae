@@ -520,6 +520,8 @@ Response (200 OK):
 
 <img width="1358" height="644" alt="image" src="https://github.com/user-attachments/assets/e1c4c245-884d-4ce5-9450-0cef7fe3d69c" />
 
+<img width="1360" height="558" alt="image" src="https://github.com/user-attachments/assets/507a9a6f-feec-419c-bcc6-a08df36885a5" />
+
 ```http
 POST http://localhost:5002/transactions
 X-Service-Token: service_shared_secret_change_this
@@ -1230,6 +1232,7 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
 
 
 
