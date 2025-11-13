@@ -315,6 +315,9 @@ Content-Type: application/json
 
 ![Image](https://github.com/user-attachments/assets/3e7623b2-2fcb-44e2-874f-0ee3b3aa006e)
 
+https://github.com/user-attachments/assets/3e7623b2-2fcb-44e2-874f-0ee3b3aa006e
+
+
 Response (201 Created):
 {
     "id": 1,
@@ -1213,6 +1216,7 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
 
 
 
