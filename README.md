@@ -1,5 +1,3 @@
-![Image](https://github.com/user-attachments/assets/3e7623b2-2fcb-44e2-874f-0ee3b3aa006e)
-
 # 🏦 Digital Wallet - Microservices System
 
 Sistem microservices untuk aplikasi dompet digital yang dibangun dengan arsitektur modern menggunakan Flask, multiple services (User, Transaction, Notification, Report), dan MySQL sebagai database.
@@ -21,7 +19,6 @@ Sistem microservices untuk aplikasi dompet digital yang dibangun dengan arsitekt
 ## 🏗️ Arsitektur Sistem
 
 Sistem ini menggunakan arsitektur microservices dengan komponen utama:
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fde9daea-00bd-4855-9031-b9108baa37de" />
 
 ```
 ┌──────────────────┐
@@ -1581,6 +1578,7 @@ Jika mengalami kendala:
 | Anggota 5    | DevOps / Integrator | API Gateway & Deployment      |
 
 ---
+
 
 
 
